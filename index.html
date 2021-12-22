@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -14,6 +16,7 @@
 
 <body>
     <header class="header">
+        <div class="container">
         <nav class="header-nav">
             <a class="link logo" href="./index.html">Web<span class="logo-span-header">Studio</span>
             </a>
@@ -23,18 +26,17 @@
                 <li class="header-item"><a class="link header-list-link" href="">Контакты</a></li>
             </ul>
         </nav>
-
-        <ul class="list contact-list">
-            <li class="contact-item">
-                <a class="link contact-link" href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer">info@devstudio.com
-                </a>
-            </li>
-            <li class="contact-item">
+                <ul class="list contact-list">
+                    <li class="contact-item">
+                    <a class="link contact-link" href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer">info@devstudio.com
+                    </a>
+                    </li>
+                <li class="contact-item">
                 <a class="link contact-link" href="tel:+380961111111" target="_blank" rel="noopener noreferrer">+38 096 111 11 11
                 </a>
-            </li>
-        </ul>
-
+                </li>
+                </ul>
+            </div>
     </header>
 
     <main>
@@ -46,7 +48,7 @@
 
         <section class="about">
 
-            <h2 hidden class="about-title">Наши качества</h2>
+            <h2 class="about-title visually-hidden">Наши качества</h2>
             <ul class="list about-list">
                 <li class="about-list-item">
                     <h3 class="about-list-title">Внимание к деталям</h3>
