@@ -8,8 +8,14 @@ img {
 }
 
 ul {
+    list-style-type: none;
     text-decoration: none;
     padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 button {
