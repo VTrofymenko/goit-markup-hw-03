@@ -30,7 +30,7 @@ body {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid teal;
+  /* outline: 2px solid teal; */
 }
 
 .section {
@@ -39,7 +39,7 @@ body {
 }
 
 .header {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -173,7 +173,8 @@ body {
 
 .hero-button {
   display: inline-block;
-  padding: 10px 32px 10px 32px;
+  padding: 10px 32px;
+  border: transparent;
   border-radius: 4px;
   margin-top: 20px;
 
@@ -251,6 +252,10 @@ body {
 
 /* -------------------TEAM----------------- */
 
+.our-team {
+  background-color: #F5F4FA;
+}
+
 .team {
   text-align: center;
   margin-bottom: 50px;
@@ -292,15 +297,34 @@ body {
 
 /* ------------------PAGE PORTFOLIO----------------- */
 
-/* -----------MAIN----------- */
+/* -------------------MAIN-------------------- */
+
+.hero-projects {
+  background-color: #FFFFFF;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.hero-list-item + .hero-list-item {
+  margin-left: 30px;
+}
 
 .hero-list-button {
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
+
   font-family: inherit;
   font-style: inherit;
   font-size: inherit;
   font-weight: 500;
   line-height: calc(26 / 16);
   letter-spacing: 3%;
+  background-color: #F5F4FA;
 }
 
 .hero-list-button:hover,
@@ -309,8 +333,18 @@ body {
   background-color: var(--hover-background-color);
 }
 
-.project-link {
-  text-decoration: none;
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 9 - 270px);
+  margin-bottom: -30px;
+  margin-left: -30px;
+}
+
+.projects-list-item {
+  margin-bottom: 30px;
+  margin-left: 30px;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .project-title {
