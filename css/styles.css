@@ -45,8 +45,6 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .header-nav {
@@ -76,6 +74,12 @@ body {
 
 .header-list {
   display: flex;
+}
+
+.header-list-link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header-item > .current {
@@ -152,6 +156,8 @@ body {
 /* --------------------HERO--------------- */
 
 .hero {
+  padding: 200px 4px;
+
   text-align: center;
   background-color: #2F303A;
 }
@@ -277,11 +283,20 @@ body {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+
+  background-color: #FFFFFF;
+  border-bottom: solid 1px transparent;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list-title {
   text-align: center;
-  margin-top: 30px;
   line-height: calc(19 / 16);
   letter-spacing: 3%;
 }
@@ -310,7 +325,7 @@ body {
 }
 
 .hero-list-item + .hero-list-item {
-  margin-left: 30px;
+  margin-left: 8px;
 }
 
 .hero-list-button {
@@ -344,7 +359,6 @@ body {
 .projects-list-item {
   margin-bottom: 30px;
   margin-left: 30px;
-  border-bottom: 1px solid #EEEEEE;
 
   text-align: left;
 }
@@ -352,6 +366,11 @@ body {
 /* .project-link {
   text-align: left;
 } */
+
+.project-container {
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+}
 
 .project-title {
   font-weight: 900;
@@ -402,6 +421,10 @@ body {
 
 .address-item +.address-item {
   margin-top: 9px;
+}
+
+.address-item .street {
+  color: #FFFFFF;
 }
 
 .footer-contacts {
